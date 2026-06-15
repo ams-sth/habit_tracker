@@ -1,6 +1,6 @@
-String interpolation in Flutter (more accurately, in Dart) is a way to embed variables or expressions directly inside a string.
+# String interpolation in Flutter (more accurately, in Dart) is a way to embed variables or expressions directly inside a string
 
-### Basic idea
+## Basic idea
 
 Instead of concatenating strings like this:
 
@@ -16,7 +16,7 @@ String name = "Amsh";
 String msg = "Hello $name!";
 ```
 
-### With expressions
+## With expressions
 
 If you need to compute something:
 
@@ -29,17 +29,17 @@ print("Sum is ${a + b}");
 
 Output:
 
-```
+```terminal
 Sum is 15
 ```
 
-### Why it exists
+## Why it exists
 
 * Cleaner than string concatenation
 * Less error-prone
 * Easier to read in UI-heavy code (which Flutter is full of)
 
-### In Flutter UI (common usage)
+## In Flutter UI (common usage)
 
 ```dart
 Text("Welcome, $name")
@@ -53,7 +53,7 @@ Text("Total: \$${price * quantity}")
 
 Note the `\$` — that’s how you print a literal dollar sign.
 
-### So is it a “concept”?
+## So is it a “concept”?
 
 Yes:
 
